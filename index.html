@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Atlas Goggle</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #f7faff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px;
+      color: #2563eb;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 650px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: clamp(38px, 9vw, 64px);
+      color: #2563eb;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    p { color: #64748b; text-align: center; }
+
+    form {
+      width: 100%;
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 18px 22px;
+      border: 1px solid #cbd5e1;
+      border-radius: 40px;
+      font-size: 17px;
+      outline-color: #2563eb;
+      background: white;
+    }
+
+    button {
+      border: 0;
+      border-radius: 12px;
+      padding: 15px 32px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover { background: #1d4ed8; }
+
+    footer {
+      padding: 22px;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>🌐 Atlas Goggle</header>
+
+  <main>
+    <h1>Atlas Goggle</h1>
+    <p>Discover the world with Atlas!</p>
+
+    <form action="https://www.google.com/search"
+          method="GET">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search anything..."
+        aria-label="Search the web"
+        required
+      >
+      <button type="submit">Atlas Search</button>
+    </form>
+  </main>
+
+  <footer>© 2026 Atlas Goggle</footer>
+</body>
+</html>
